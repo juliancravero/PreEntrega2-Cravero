@@ -1,16 +1,99 @@
 
 
 .titulos{
-    color: violet;
+    color: rgb(84, 29, 84);
 }
 
 li {
     display: inline-block;
+    list-style: none;
+    padding: 0px 20px;
+}
+li a{
+    color: rgb(255, 0, 128);
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.Prueba1{
+    background-image: url("../imagenes/Comic.jpg");
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+}
+.Header{
+    position: sticky;
+    top: 0;
+}
+nav {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    flex-direction: left;
+    align-items: center;
+
+}
+.LogoInicio {
+    position: absolute;
+    left: 50px;
+    top: 5px;
+}
+  
+.LogoInicio img {
+    width: 70px;
+    height: 70px;
 }
 
 .contenedor{
     border-top: 3px solid violet;  
     margin: 50px;
     padding: 30px;
-    background-color:thistle;
+    background-color:rgba(0, 0, 0, 0.221);
+    display: flex;
+    flex-direction: column;
+}
+
+.MensajeEntrada{
+    margin: auto;
+    height: 120px;
+    width: 400px;
+    background-color: rgb(161, 112, 160);
+    border-radius: 10px;
+    border: 2px solid rgb(160, 65, 130);
+    box-shadow: 0 2px 4px grey;
+    bottom: 20px;
+}
+
+.contenedorHijo{
+    top: -100px;
+    height: 450px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+  
+
+}
+.Imagen__dentro_caja {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+    border: 5px solid rgb(160, 65, 130);
+    box-shadow: 0 2px 4px grey;
+}
+  
+
+.textoComic {
+    position: relative;
+    height: 220px;
+    width: 200px;
+    overflow: hidden;
+    top: -10px;
+    background-color: rgba(176, 120, 168, 0.491);
+    padding-top: 2px;
+    border-radius: 5px;
+    border-style:groove;
+    text-align: center;
 }
