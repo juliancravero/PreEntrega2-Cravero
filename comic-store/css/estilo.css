@@ -83,8 +83,25 @@ nav {
     border: 5px solid rgb(160, 65, 130);
     box-shadow: 0 2px 4px grey;
 }
-  
+ 
+.Imagen__dentro_caja:hover {
+    cursor: pointer;
+    height: 300px;
+    width: 300px;
+    transition-delay: 180ms;
+}
 
+.textoimagen {
+    position: relative;
+    top: -10px;
+    background-color: beige;
+    padding-top: 2px;
+    border-radius: 5%;
+    border-style: dotted;
+    text-align: center;
+    cursor: pointer;
+    transition-delay: 3ms;
+}
 .textoComic {
     position: relative;
     height: 220px;
@@ -96,4 +113,34 @@ nav {
     border-radius: 5px;
     border-style:groove;
     text-align: center;
+}
+
+main, section {
+    display: flex;
+    grid-template-columns: 90px 90px 90px 90px;
+    grid-template-rows: 90px 90px 90px 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 30px;
+    row-gap: 30px;
+    object-fit: fill;
+    flex-wrap: wrap;
+    font-family: Neucha;
+    justify-content: space-evenly;
+}
+main .main, main .section, section .main, section .section {
+    column-gap: 30px;
+}
+
+main, section {
+    display: flex;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    column-gap: 100px;
+    row-gap: 30px;
+    object-fit: fill;
+    flex-wrap: wrap;
+    font-family: Neucha;
 }
